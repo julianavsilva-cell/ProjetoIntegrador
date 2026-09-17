@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu site Responsivo</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color:rgba(15,76,92);
+        }
+
+        header{
+            background-color: rgba(168,8);
+            color: rgba(91,124,141);
+            text-align: center;
+            padding: 5vh 5%;
+        }
+
+        nav{
+            background-color: rgba(201,162,39);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;            
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;            
+        }
+
+        main{
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .destaque{
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .cards{
+            display: flex;
+            gap: 20px;
+        }
+
+        .card{
+            width: 33%;
+            min-height: 25vh;
+
+            background-color: steelblue;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer{
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 4vh 5%;
+            font-size: 25px;
+        }
+
+
+        /* celular */
+        @media (max-width: 600px){
+            nav{
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .cards{
+                flex-direction: column;
+            }
+
+            .card{
+                width: 100%;
+            }
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Black Mirror</h1>
+      <p>Um site simples de exemplo, responsivo</p>
+    </header>
+
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Sobre</a>
+      <a href="#">Projetos</a>
+      <a href="#">Contato</a>
+    </nav>
+
+    <main>
+      <section class="destaque">
+        <h2>Bem-vindo!</h2>
+
+        <p>Um pouco sobre a série  Black Mirror</p>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <h2>Card 1</h2>
+          <p> A série fala sobre Lacie Pound que tenta aumentar sua nota nas redes sociais através de comportamentos falsos, ela posta fotos com com falsos acontecimentos. 
+            A série mostra pessoas que buscam se encaixar no padrão criado pela sociedade. No meio de busca por "notas" nas redes sociais, as pessoas acabem sendo hipócrita e deixando
+             de lado a própria opnião, para fazer parte de um padrão social. </p>
+        </div>
+
+        <div class="card">
+          <h2>Card 2</h2>
+          <p>Black Mirror mostra os vícios da nossa realidade tecnológica atual. A série mostra que o perigo real não são dos aparelhos, mas como o comportamento humano faz com que seja 
+            ainda maior a busca por vaidade, a dependência digital e o controle social.</p>
+        </div>
+
+        <div class="card">
+          <h2>Card 3</h2>
+          <p>O objetivo da série Black Mirror não é prever o futuro, nem dizer que a tecnologia é uma péssima. Mas sim, mostrar que a sociedade usa a tecnologia como desculpa.
+            O "Espelho Preto" do título seria a tela do celular desligada, quando ela apaga você pode ver seu reflexo. Isso éexatamente o que a série faz, ela nos mostra o quanto
+             "dependemos" não só da tecnologia, como das redes sociais, as vezes por busca de validação ou para se encaixar em um padrão social. </p>
+
+<!-- Define a largura para 200 pixels. A altura se ajusta sozinha para não distorcer. -->
+<img src="https://m.media-amazon.com/images/I/81UcD17TMrL._AC_UF894,1000_QL80_.jpg" width="200px" alt="https://m.media-amazon.com/images/I/81UcD17TMrL._AC_UF894,1000_QL80_.jpg">
+
+            </div>
+      </section>
+    </main>
+
+    <footer>Meu site - 2026</footer>
+  </body>
+</html>
